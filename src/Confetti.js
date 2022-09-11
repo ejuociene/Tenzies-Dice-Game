@@ -7,6 +7,6 @@ export default () => {
 	useEffect(() => {
 		width = window.width;
 		height = window.height;
-	});
+	}, []);
 	return <Confetti width={width} height={height} />;
 };
