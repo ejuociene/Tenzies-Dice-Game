@@ -96,9 +96,17 @@ body {
 	}
 	.dice-container {
 		display: grid;
-		grid-template: auto auto/ repeat(2, 1fr);
+		grid-template: auto auto/ repeat(6, 1fr);
 		gap: 20px;
-		margin: 30px 50px;
+		margin: 30px auto;
+	}
+
+	.dice-face {
+		grid-column: span 2;
+	}
+
+	.dice-face:nth-last-child(1) {
+		grid-column: 3 / span 2;
 	}
 	.dice-img {
 		width: 70px;
