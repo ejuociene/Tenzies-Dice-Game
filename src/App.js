@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import Dice from './Dice';
-import Confetti from 'react-confetti';
+import Confetti from './Confetti';
 import One from './images/One.svg';
 import Two from './images/Two.svg';
 import Three from './images/three.svg';
