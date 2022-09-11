@@ -9,8 +9,8 @@ body {
 
 .App {
 	background-color: #ffffff;
-	width: 50%;
-	margin: 30px auto;
+	width: 600px;
+	margin: 50px auto;
 	padding: 40px;
 	border-radius: 20px;
 }
@@ -24,10 +24,10 @@ body {
 
 .text {
 	margin-top: 30px;
+	text-align: center;
 }
 
 .dice-container {
-	width: 100%;
 	display: grid;
 	grid-template: auto auto/ repeat(5, 1fr);
 	gap: 20px;
@@ -35,18 +35,56 @@ body {
 }
 
 .dice-face {
-	width: 70px;
-	height: 70px;
+	margin: 0 auto;
+	/* width: 70px;
+	height: 70px; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border-radius: 10px;
+	border-radius: 20px;
 	box-shadow: 5px 4px 15px -4px rgba(0, 0, 0, 0.47);
 	-webkit-box-shadow: 5px 4px 15px -4px rgba(0, 0, 0, 0.47);
 	-moz-box-shadow: 5px 4px 15px -4px rgba(0, 0, 0, 0.47);
+
 	cursor: pointer;
 }
 
 .dice-face:hover {
 	transform: translateY(-1px);
+}
+
+.dice-img {
+	width: 70px;
+	height: 70px;
+	border-radius: 10px;
+	/* filter: invert(85%) sepia(33%) saturate(3687%) hue-rotate(311deg) brightness(104%) contrast(77%); */
+}
+
+.btn {
+	font-family: 'Varela Round', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	margin: 0 auto;
+	text-align: center;
+	display: block;
+	padding: 15px 30px;
+	border-radius: 8px;
+	border: none;
+	background-color: #fcca46;
+	cursor: pointer;
+}
+
+.btn:hover {
+	background-color: #c8553d;
+	color: #ffd5c2;
+	transform: translateY(-1px);
+}
+
+.bold {
+	text-align: center;
+	font-size: 20px;
+	font-weight: 800;
+	text-transform: uppercase;
 }
